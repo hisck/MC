@@ -2,8 +2,8 @@ import math
 from math import fabs
 stop = 1E-11
 
-def calculatesqrt(x, chute):
-    x0 = chute
+def calculatesqrt(x):
+    x0 = x/2
     x1 = ((1/2)*(x0 + (x/x0)))
     while abs(x1-x0) > stop:
         x0 = x1
@@ -11,8 +11,6 @@ def calculatesqrt(x, chute):
     return x1
 
 valor = input("valor a ser calculado: ")
-valor2 = input("Valor do chute: ")
-chute = int (valor2)
 valor_int = int (valor)
-res = calculatesqrt(valor_int, chute)
+res = calculatesqrt(valor_int)
 print(f"A resposta é : {res}")
