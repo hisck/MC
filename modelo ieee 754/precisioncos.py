@@ -15,7 +15,8 @@ def cos(x):
     if remainder == 0:
         return 1 - (x**2/math.factorial(2)) + (x**4/math.factorial(4)) - (x**6/math.factorial(6)) + (x**8/math.factorial(8)) - (x**10/math.factorial(10))
     elif remainder == 1:
-        return - sen(newX)
+        print("Entrou aqui")
+        return -sen(newX)
     elif remainder == 2:
         return - (1 - (x**2/math.factorial(2)) + (x**4/math.factorial(4)) - (x**6/math.factorial(6)) + (x**8/math.factorial(8)) - (x**10/math.factorial(10)))
     elif remainder == 3:

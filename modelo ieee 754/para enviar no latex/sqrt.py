@@ -18,8 +18,3 @@ def k(x):
 
 def g(x):
     return (2**(k(x)/2)) * (sqrtSerie(argumentReduction(x) - 1))
-
-valor = input("valor a ser calculado: ")
-valor_int = int (valor)
-res = g(valor_int)
-print(f"A resposta é : {res}")
